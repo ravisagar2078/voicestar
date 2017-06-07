@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ravisagar.hci.MainActivity"
+    android:background="#f5eff0">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/msg1"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:id="@+id/etUserName"
+        android:hint="Username"
+        android:textColorLink="#1b0000"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:layout_above="@+id/etPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnlogin"
+        android:layout_alignEnd="@+id/btnlogin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:id="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/mssg3"
+        android:hint="Password"
+        android:layout_above="@+id/btnlogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/etUserName"
+        android:layout_alignEnd="@+id/etUserName" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login In"
+        android:id="@+id/btnlogin"
+        android:layout_marginTop="10dp"
+        android:onClick="onlogin"
+        android:layout_above="@+id/btn_reg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:background="#99001C" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create a new account"
+        android:id="@+id/btn_reg"
+        android:onClick="OpenReg"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="46dp"
+        android:background="#332729"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnlogin"
+        android:layout_alignEnd="@+id/btnlogin" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/kat"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sing and Record your own songs and share and get fans around the world"
+        android:id="@+id/textView"
+        android:textColor="#000000"
+        android:textColorHighlight="#550606"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Forgot Password?"
+        android:id="@+id/textView4"
+        android:clickable="true"
+        android:layout_marginBottom="14dp"
+        android:onClick="OpenForgot"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#99001C" />
+
+
+</RelativeLayout>

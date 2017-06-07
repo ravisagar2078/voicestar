@@ -1,0 +1,15 @@
+<resources>
+
+
+    <string name="app_name">"Voicestar"</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="tnamespace">"http://tempuri.org/"</string>
+
+
+    <string name="soapadd">"http://192.168.0.105/vrService/Service1.asmx"</string>
+
+
+
+</resources>
